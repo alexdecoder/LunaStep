@@ -109,3 +109,17 @@ input:focus
 
     font-family: 'Open Sans', sans-serif;
 }
+
+@media only screen and (max-width : 800px)
+{
+    .contentDialog
+    {
+        max-width: 100%;
+        width: 100%;
+
+        box-sizing: border-box;
+
+        padding-left: .5em;
+        padding-right: .5em
+    }
+}
