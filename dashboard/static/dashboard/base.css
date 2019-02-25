@@ -59,6 +59,38 @@ html, body
     font-family: 'open sans', sans-serif;
     opacity: .5;
 }
+.headbar-search
+{
+    background-color: #32325d;
+
+    display: flex;
+    align-items: center;
+
+    padding: .5em 1em;
+
+    margin-left: 5%;
+
+    border-radius: 10em;
+
+    transition: all .05s ease-out;
+}
+.headbar-search-box
+{
+    margin-left: 1em;
+
+    background: transparent;
+
+    border: none;
+    outline: none;
+
+    color: #43458b;
+    font-size: 110%;
+}
+.headbar-search-box:focus
+{
+    border: none;
+    outline: none;
+}
 
 .mainWrapper
 {

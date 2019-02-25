@@ -13,6 +13,7 @@ def main(request):
             context = {
                 'username':user,
                 'is_super':user_object.is_superuser,
+                'title':'Home'
             }
 
             return render(request, 'dashboard/base.html', context)
