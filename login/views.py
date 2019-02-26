@@ -2,7 +2,7 @@ from django.shortcuts import render, redirect
 from django.http import HttpResponse
 from django.contrib.auth import authenticate
 
-def login(request):
+def login(request): #TODO: VERIFY USER
     username = request.session.get('user', None)
     password = request.session.get('password', None)
     if username is not None and password is not None:
