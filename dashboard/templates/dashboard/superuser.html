@@ -1,0 +1,9 @@
+{% extends 'dashboard/base.html' %}
+{% block content %}
+    {% for user in first_user_set %}
+    {{user.username}}
+    {% endfor %}
+{% endblock content %}
+{% block sidebar %}
+    
+{% endblock sidebar %}
