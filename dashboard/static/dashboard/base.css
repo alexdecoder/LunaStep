@@ -150,3 +150,71 @@ html, body
     height: 100%;
     width: 100%;
 }
+.content-section
+{
+    display: none;
+}
+
+.content-people
+{
+    display: flex;
+    flex-direction: column;
+
+    padding: 3em 2em;
+}
+.people-node
+{
+    display: flex;
+    align-items: center;
+
+    background: white;
+
+    padding: 1em 2em;
+
+    box-shadow: 0 1px 3px 0 #cfd7df;
+}
+.people-node-crown
+{
+    margin-left: auto;
+    margin-right: 1em;
+}
+
+.people-node-more
+{
+    cursor: pointer;
+}
+.dialog
+{
+    margin-left: auto;
+}
+.dialog:hover .dialog-content
+{
+    display: flex;
+    flex-direction: column;
+}
+.dialog-content
+{
+    position: absolute;
+
+    box-shadow: 0 1px 3px 0 #cfd7df;
+
+    background: white;
+
+    padding: .5em 2em 1.5em 2em;
+
+    display: none;
+
+    margin-left: -5em;
+}
+.dialog-content-node
+{
+    cursor: pointer;
+
+    margin-top: 1em;
+
+    transition: all .1s ease;
+}
+.dialog-content-node:hover
+{
+    opacity: .7;
+}
