@@ -32,6 +32,7 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'lunastep',
+    'api.apps.ApiConfig',
     'dashboard.apps.DashboardConfig',
     'login.apps.LoginConfig',
     'django.contrib.admin',
