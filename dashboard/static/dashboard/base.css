@@ -105,8 +105,7 @@ html, body
     padding: 1em;
 
     max-height: 10em;
-
-    overflow-y: scroll;
+    overflow-y: auto;
 }
 .headbar-search-box
 {
