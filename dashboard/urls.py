@@ -3,6 +3,6 @@ from django.urls import path
 from . import views
 
 urlpatterns = [
-    path('', views.main, name='dashboard-main'),
-    path('sessdest/', views.destroy_session)
+    path('', views.dash_main, name='dashboard-main'),
+    path('superuser/', views.dash_super_system_groups, name='dashboard-super-main')
 ]

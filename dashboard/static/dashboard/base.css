@@ -258,3 +258,66 @@ html, body
 {
     opacity: .7;
 }
+
+.content-header
+{
+    margin: 1em;
+
+    font-size: 150%;
+}
+.content-stack
+{
+    display: flex;
+    flex-direction: column;
+
+    box-shadow: 0 1px 3px 0 #cfd7df;
+
+    margin: 0 2em;
+}
+.content-stack-node
+{
+    display: flex;
+    align-items: baseline;
+    flex-direction: column;
+
+    background: white;
+}
+.content-stack-node-arrow
+{
+    margin-left: auto;
+}
+.content-stack-node-header
+{
+    display: flex;
+    flex-direction: row;
+
+    width: 100%;
+
+    cursor: pointer;
+
+    transition: all 100ms ease;
+
+    padding: 1em 2em;
+
+    box-sizing: border-box;
+}
+.content-stack-node-header:hover
+{
+    background-color: rgba(0, 0, 0, 0.05);
+}
+.content-stack-node-spoiler
+{
+    width: 100%;
+
+    display: none;
+}
+
+.loader
+{
+    width: 30px;
+    height: 30px;
+
+    display: none;
+
+    margin: 0 auto;
+}

@@ -2,8 +2,8 @@ from django.shortcuts import render, redirect
 from django.http import HttpResponse
 from django.contrib.auth import authenticate
 
-def login(request): #TODO: VERIFY USER
-    username = request.session.get('user', None)
+def login(request):
+    username = request.session.get('username', None)
     password = request.session.get('password', None)
     if username is not None and password is not None:
         return redirect('dashboard-main')
@@ -16,7 +16,7 @@ def verify_login(request):
     if username is not None and password is not None:
         user = authenticate(username=username, password=password)
         if user is not None:
-            request.session['user'] = username
+            request.session['username'] = username
             request.session['password'] = password
             
             return HttpResponse('valid')
